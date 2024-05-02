@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_992fc8abdbd0f1568ff5018a7889d9ee {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_992fc8abdbd0f1568ff5018a7889d9ee" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_992fc8abdbd0f1568ff5018a7889d9ee = L.map(
+                "map_992fc8abdbd0f1568ff5018a7889d9ee",
+                {
+                    center: [-0.2857142857142857, 31.428571428571427],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_28da4b03f6c264f64fbb5ae15a4a7319 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_28da4b03f6c264f64fbb5ae15a4a7319.addTo(map_992fc8abdbd0f1568ff5018a7889d9ee);
+        
+    
+            var marker_8061403c6ef05ae4b272c66cacec00fa = L.marker(
+                [37.5, -119.5],
+                {}
+            ).addTo(map_992fc8abdbd0f1568ff5018a7889d9ee);
+        
+    
+        var popup_95ae7372c9c1538424394a969235cfdc = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            
+                var html_81b0c2a8c538c0d77ecc17b4eb3fa461 = $(`<div id="html_81b0c2a8c538c0d77ecc17b4eb3fa461" style="width: 100.0%; height: 100.0%;">Colorado Plateau, USA</div>`)[0];
+                popup_95ae7372c9c1538424394a969235cfdc.setContent(html_81b0c2a8c538c0d77ecc17b4eb3fa461);
+            
+        
+
+        marker_8061403c6ef05ae4b272c66cacec00fa.bindPopup(popup_95ae7372c9c1538424394a969235cfdc)
+        .openPopup();
+
+        
+    
+    
+            marker_8061403c6ef05ae4b272c66cacec00fa.bindTooltip(
+                `<div>
+                     Colorado Plateau, USA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1eb370bb9d901e74b6ded57633366cc = L.marker(
+                [-25.0, 134.0],
+                {}
+            ).addTo(map_992fc8abdbd0f1568ff5018a7889d9ee);
+        
+    
+        var popup_56d9e93d1b30faa930ef4f316314ebd5 = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            
+                var html_bbf26113c50b251eb8845ce789b67339 = $(`<div id="html_bbf26113c50b251eb8845ce789b67339" style="width: 100.0%; height: 100.0%;">Australian Plateau, Australia</div>`)[0];
+                popup_56d9e93d1b30faa930ef4f316314ebd5.setContent(html_bbf26113c50b251eb8845ce789b67339);
+            
+        
+
+        marker_c1eb370bb9d901e74b6ded57633366cc.bindPopup(popup_56d9e93d1b30faa930ef4f316314ebd5)
+        .openPopup();
+
+        
+    
+    
+            marker_c1eb370bb9d901e74b6ded57633366cc.bindTooltip(
+                `<div>
+                     Australian Plateau, Australia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4940b5b0be6dd1019638736c476634b5 = L.marker(
+                [0.5, 37.5],
+                {}
+            ).addTo(map_992fc8abdbd0f1568ff5018a7889d9ee);
+        
+    
+        var popup_fe224104d58182b93400f0f205f438d3 = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            
+                var html_8f010160bcf1f9b8fed64b74d309f701 = $(`<div id="html_8f010160bcf1f9b8fed64b74d309f701" style="width: 100.0%; height: 100.0%;">Ethiopian Highlands, Ethiopia</div>`)[0];
+                popup_fe224104d58182b93400f0f205f438d3.setContent(html_8f010160bcf1f9b8fed64b74d309f701);
+            
+        
+
+        marker_4940b5b0be6dd1019638736c476634b5.bindPopup(popup_fe224104d58182b93400f0f205f438d3)
+        .openPopup();
+
+        
+    
+    
+            marker_4940b5b0be6dd1019638736c476634b5.bindTooltip(
+                `<div>
+                     Ethiopian Highlands, Ethiopia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa6bf52b64ff760771173cfefacbea94 = L.marker(
+                [-40.0, -68.0],
+                {}
+            ).addTo(map_992fc8abdbd0f1568ff5018a7889d9ee);
+        
+    
+        var popup_b051067ac22b34e6b48fd097c0e2310b = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            
+                var html_5219dd14344b1f27d1137511705f777e = $(`<div id="html_5219dd14344b1f27d1137511705f777e" style="width: 100.0%; height: 100.0%;">Patagonian Plateau, Argentina</div>`)[0];
+                popup_b051067ac22b34e6b48fd097c0e2310b.setContent(html_5219dd14344b1f27d1137511705f777e);
+            
+        
+
+        marker_aa6bf52b64ff760771173cfefacbea94.bindPopup(popup_b051067ac22b34e6b48fd097c0e2310b)
+        .openPopup();
+
+        
+    
+    
+            marker_aa6bf52b64ff760771173cfefacbea94.bindTooltip(
+                `<div>
+                     Patagonian Plateau, Argentina
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_71aab4f6bd51aa0d6b46f8059a0ed3e6 = L.marker(
+                [-23.0, 47.0],
+                {}
+            ).addTo(map_992fc8abdbd0f1568ff5018a7889d9ee);
+        
+    
+        var popup_e8dbf1163153c5fe363769c00c31cefb = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            
+                var html_cd5e46cdfa970b2c71e30dbaeb3e7e49 = $(`<div id="html_cd5e46cdfa970b2c71e30dbaeb3e7e49" style="width: 100.0%; height: 100.0%;">Madagascar Plateau, Madagascar</div>`)[0];
+                popup_e8dbf1163153c5fe363769c00c31cefb.setContent(html_cd5e46cdfa970b2c71e30dbaeb3e7e49);
+            
+        
+
+        marker_71aab4f6bd51aa0d6b46f8059a0ed3e6.bindPopup(popup_e8dbf1163153c5fe363769c00c31cefb)
+        .openPopup();
+
+        
+    
+    
+            marker_71aab4f6bd51aa0d6b46f8059a0ed3e6.bindTooltip(
+                `<div>
+                     Madagascar Plateau, Madagascar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_86397d165f94712b74374c5ffd1319e5 = L.marker(
+                [22.0, 78.0],
+                {}
+            ).addTo(map_992fc8abdbd0f1568ff5018a7889d9ee);
+        
+    
+        var popup_1daecb420ddd40ecf5c6ea7e23e89891 = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            
+                var html_2c00a61658cdc1bb2b8d7cbb073663ee = $(`<div id="html_2c00a61658cdc1bb2b8d7cbb073663ee" style="width: 100.0%; height: 100.0%;">Malwa Plateau, India</div>`)[0];
+                popup_1daecb420ddd40ecf5c6ea7e23e89891.setContent(html_2c00a61658cdc1bb2b8d7cbb073663ee);
+            
+        
+
+        marker_86397d165f94712b74374c5ffd1319e5.bindPopup(popup_1daecb420ddd40ecf5c6ea7e23e89891)
+        .openPopup();
+
+        
+    
+    
+            marker_86397d165f94712b74374c5ffd1319e5.bindTooltip(
+                `<div>
+                     Malwa Plateau, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_efd7f1658f7c9de1c7d57f07201863d8 = L.marker(
+                [14.0, 79.0],
+                {}
+            ).addTo(map_992fc8abdbd0f1568ff5018a7889d9ee);
+        
+    
+        var popup_03cdbfd4167df66861b99918878ee0f3 = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            
+                var html_2e65bd8605add6150455a67c5e154802 = $(`<div id="html_2e65bd8605add6150455a67c5e154802" style="width: 100.0%; height: 100.0%;">Deccan Plateau, India</div>`)[0];
+                popup_03cdbfd4167df66861b99918878ee0f3.setContent(html_2e65bd8605add6150455a67c5e154802);
+            
+        
+
+        marker_efd7f1658f7c9de1c7d57f07201863d8.bindPopup(popup_03cdbfd4167df66861b99918878ee0f3)
+        .openPopup();
+
+        
+    
+    
+            marker_efd7f1658f7c9de1c7d57f07201863d8.bindTooltip(
+                `<div>
+                     Deccan Plateau, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6ca271bd13adb9f7240b91edf05ee7ed = L.marker(
+                [18.5, 76.5],
+                {}
+            ).addTo(map_992fc8abdbd0f1568ff5018a7889d9ee);
+        
+    
+        var popup_115428664a93d76594e5ce5cdc380030 = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            
+                var html_f17884989e3d71593e8e5c4fcd9e9816 = $(`<div id="html_f17884989e3d71593e8e5c4fcd9e9816" style="width: 100.0%; height: 100.0%;">Chota Nagpur Plateau, India</div>`)[0];
+                popup_115428664a93d76594e5ce5cdc380030.setContent(html_f17884989e3d71593e8e5c4fcd9e9816);
+            
+        
+
+        marker_6ca271bd13adb9f7240b91edf05ee7ed.bindPopup(popup_115428664a93d76594e5ce5cdc380030)
+        .openPopup();
+
+        
+    
+    
+            marker_6ca271bd13adb9f7240b91edf05ee7ed.bindTooltip(
+                `<div>
+                     Chota Nagpur Plateau, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0bfe3476f97725558f767acf01e32481 = L.marker(
+                [19.5, 73.5],
+                {}
+            ).addTo(map_992fc8abdbd0f1568ff5018a7889d9ee);
+        
+    
+        var popup_1fa8ea8cf9194129f8db121ecbe1cfa7 = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            
+                var html_5f35eee4744099183ada00bb24152966 = $(`<div id="html_5f35eee4744099183ada00bb24152966" style="width: 100.0%; height: 100.0%;">Maharashtra Plateau, India</div>`)[0];
+                popup_1fa8ea8cf9194129f8db121ecbe1cfa7.setContent(html_5f35eee4744099183ada00bb24152966);
+            
+        
+
+        marker_0bfe3476f97725558f767acf01e32481.bindPopup(popup_1fa8ea8cf9194129f8db121ecbe1cfa7)
+        .openPopup();
+
+        
+    
+    
+            marker_0bfe3476f97725558f767acf01e32481.bindTooltip(
+                `<div>
+                     Maharashtra Plateau, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_77016a0b21e950d1d47c8a71a01eba66 = L.marker(
+                [20.0, 77.0],
+                {}
+            ).addTo(map_992fc8abdbd0f1568ff5018a7889d9ee);
+        
+    
+        var popup_dc75c44a3a80f2640945e2f7746aa1ee = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            
+                var html_8a5e782ccca834fa62b384b8ec7960d8 = $(`<div id="html_8a5e782ccca834fa62b384b8ec7960d8" style="width: 100.0%; height: 100.0%;">Telangana Plateau, India</div>`)[0];
+                popup_dc75c44a3a80f2640945e2f7746aa1ee.setContent(html_8a5e782ccca834fa62b384b8ec7960d8);
+            
+        
+
+        marker_77016a0b21e950d1d47c8a71a01eba66.bindPopup(popup_dc75c44a3a80f2640945e2f7746aa1ee)
+        .openPopup();
+
+        
+    
+    
+            marker_77016a0b21e950d1d47c8a71a01eba66.bindTooltip(
+                `<div>
+                     Telangana Plateau, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_60a31a422811c3e4b97f2ba337eb49ba = L.marker(
+                [32.0, 35.0],
+                {}
+            ).addTo(map_992fc8abdbd0f1568ff5018a7889d9ee);
+        
+    
+        var popup_9b41e6f90f1df4aa7933c8f30ff9e47d = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            
+                var html_eed82818ddb00577f190565e0be1482b = $(`<div id="html_eed82818ddb00577f190565e0be1482b" style="width: 100.0%; height: 100.0%;">Jordanian Plateau, Jordan</div>`)[0];
+                popup_9b41e6f90f1df4aa7933c8f30ff9e47d.setContent(html_eed82818ddb00577f190565e0be1482b);
+            
+        
+
+        marker_60a31a422811c3e4b97f2ba337eb49ba.bindPopup(popup_9b41e6f90f1df4aa7933c8f30ff9e47d)
+        .openPopup();
+
+        
+    
+    
+            marker_60a31a422811c3e4b97f2ba337eb49ba.bindTooltip(
+                `<div>
+                     Jordanian Plateau, Jordan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bf6a63a517885cd413ea4d69a89336a1 = L.marker(
+                [-21.0, 24.0],
+                {}
+            ).addTo(map_992fc8abdbd0f1568ff5018a7889d9ee);
+        
+    
+        var popup_3f3b8fa0a0dad3e2102e5d145daf6500 = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            
+                var html_0d1b7080250137a1c30539e6e42198a2 = $(`<div id="html_0d1b7080250137a1c30539e6e42198a2" style="width: 100.0%; height: 100.0%;">Kalahari Plateau, Botswana</div>`)[0];
+                popup_3f3b8fa0a0dad3e2102e5d145daf6500.setContent(html_0d1b7080250137a1c30539e6e42198a2);
+            
+        
+
+        marker_bf6a63a517885cd413ea4d69a89336a1.bindPopup(popup_3f3b8fa0a0dad3e2102e5d145daf6500)
+        .openPopup();
+
+        
+    
+    
+            marker_bf6a63a517885cd413ea4d69a89336a1.bindTooltip(
+                `<div>
+                     Kalahari Plateau, Botswana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f3cc5acc9d8ad9b84a2c0efb36fafbd7 = L.marker(
+                [-11.0, -66.0],
+                {}
+            ).addTo(map_992fc8abdbd0f1568ff5018a7889d9ee);
+        
+    
+        var popup_6ea66a3b7104b6f9245998552b50dfca = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            
+                var html_93a72eaa53bd7d2fbc67e228c0ebd435 = $(`<div id="html_93a72eaa53bd7d2fbc67e228c0ebd435" style="width: 100.0%; height: 100.0%;">Brazilian Highlands, Brazil</div>`)[0];
+                popup_6ea66a3b7104b6f9245998552b50dfca.setContent(html_93a72eaa53bd7d2fbc67e228c0ebd435);
+            
+        
+
+        marker_f3cc5acc9d8ad9b84a2c0efb36fafbd7.bindPopup(popup_6ea66a3b7104b6f9245998552b50dfca)
+        .openPopup();
+
+        
+    
+    
+            marker_f3cc5acc9d8ad9b84a2c0efb36fafbd7.bindTooltip(
+                `<div>
+                     Brazilian Highlands, Brazil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4bbf3e1ef5bbeadd11519151e270846a = L.marker(
+                [-2.0, 22.0],
+                {}
+            ).addTo(map_992fc8abdbd0f1568ff5018a7889d9ee);
+        
+    
+        var popup_69c0cefffb9a47741669b265e970daf1 = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            
+                var html_94a9645a1a957e55455f686a7e50fd0e = $(`<div id="html_94a9645a1a957e55455f686a7e50fd0e" style="width: 100.0%; height: 100.0%;">Congo Plateau, Democratic Republic of the Congo</div>`)[0];
+                popup_69c0cefffb9a47741669b265e970daf1.setContent(html_94a9645a1a957e55455f686a7e50fd0e);
+            
+        
+
+        marker_4bbf3e1ef5bbeadd11519151e270846a.bindPopup(popup_69c0cefffb9a47741669b265e970daf1)
+        .openPopup();
+
+        
+    
+    
+            marker_4bbf3e1ef5bbeadd11519151e270846a.bindTooltip(
+                `<div>
+                     Congo Plateau, Democratic Republic of the Congo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ef9d3995a3e20de73b98db4347291100 = L.marker(
+                [21.0, 96.0],
+                {}
+            ).addTo(map_992fc8abdbd0f1568ff5018a7889d9ee);
+        
+    
+        var popup_a47d2ac9249b1bf89cc7bc8fd09f4f0e = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            
+                var html_d8b62b4f98f7a2c72923a1368eebd069 = $(`<div id="html_d8b62b4f98f7a2c72923a1368eebd069" style="width: 100.0%; height: 100.0%;">Shan Plateau, Myanmar</div>`)[0];
+                popup_a47d2ac9249b1bf89cc7bc8fd09f4f0e.setContent(html_d8b62b4f98f7a2c72923a1368eebd069);
+            
+        
+
+        marker_ef9d3995a3e20de73b98db4347291100.bindPopup(popup_a47d2ac9249b1bf89cc7bc8fd09f4f0e)
+        .openPopup();
+
+        
+    
+    
+            marker_ef9d3995a3e20de73b98db4347291100.bindTooltip(
+                `<div>
+                     Shan Plateau, Myanmar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_816dccd2684c80c0e354410e27f05812 = L.marker(
+                [-22.0, -65.0],
+                {}
+            ).addTo(map_992fc8abdbd0f1568ff5018a7889d9ee);
+        
+    
+        var popup_c68e5a4617de34635f1422b281806431 = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            
+                var html_a1049849fcd89260938d18d9c837e306 = $(`<div id="html_a1049849fcd89260938d18d9c837e306" style="width: 100.0%; height: 100.0%;">Altiplano, Bolivia</div>`)[0];
+                popup_c68e5a4617de34635f1422b281806431.setContent(html_a1049849fcd89260938d18d9c837e306);
+            
+        
+
+        marker_816dccd2684c80c0e354410e27f05812.bindPopup(popup_c68e5a4617de34635f1422b281806431)
+        .openPopup();
+
+        
+    
+    
+            marker_816dccd2684c80c0e354410e27f05812.bindTooltip(
+                `<div>
+                     Altiplano, Bolivia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6d7d019d98d2448ea609798dc4143dc3 = L.marker(
+                [-26.0, 121.0],
+                {}
+            ).addTo(map_992fc8abdbd0f1568ff5018a7889d9ee);
+        
+    
+        var popup_c8eb1a1a72dca3e8a415df7fb96fd6f6 = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            
+                var html_74628b3895a9a65d9ecb5ec730624d6d = $(`<div id="html_74628b3895a9a65d9ecb5ec730624d6d" style="width: 100.0%; height: 100.0%;">Great Sandy Desert, Australia</div>`)[0];
+                popup_c8eb1a1a72dca3e8a415df7fb96fd6f6.setContent(html_74628b3895a9a65d9ecb5ec730624d6d);
+            
+        
+
+        marker_6d7d019d98d2448ea609798dc4143dc3.bindPopup(popup_c8eb1a1a72dca3e8a415df7fb96fd6f6)
+        .openPopup();
+
+        
+    
+    
+            marker_6d7d019d98d2448ea609798dc4143dc3.bindTooltip(
+                `<div>
+                     Great Sandy Desert, Australia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_495038ed1e0feda8df2dcc2be3856eac = L.marker(
+                [35.0, 104.0],
+                {}
+            ).addTo(map_992fc8abdbd0f1568ff5018a7889d9ee);
+        
+    
+        var popup_5db7338b6ccc169af7837499a60b1ba4 = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            
+                var html_e891de6de6d63da2d4361b1df88b9889 = $(`<div id="html_e891de6de6d63da2d4361b1df88b9889" style="width: 100.0%; height: 100.0%;">Loess Plateau, China</div>`)[0];
+                popup_5db7338b6ccc169af7837499a60b1ba4.setContent(html_e891de6de6d63da2d4361b1df88b9889);
+            
+        
+
+        marker_495038ed1e0feda8df2dcc2be3856eac.bindPopup(popup_5db7338b6ccc169af7837499a60b1ba4)
+        .openPopup();
+
+        
+    
+    
+            marker_495038ed1e0feda8df2dcc2be3856eac.bindTooltip(
+                `<div>
+                     Loess Plateau, China
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0d09a00579d9dd0887ce26e94b5620c4 = L.marker(
+                [-29.0, 23.0],
+                {}
+            ).addTo(map_992fc8abdbd0f1568ff5018a7889d9ee);
+        
+    
+        var popup_f295bebf00578865333772e98e0121de = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            
+                var html_b30d6fa79640cb08f348d0224ed86a2d = $(`<div id="html_b30d6fa79640cb08f348d0224ed86a2d" style="width: 100.0%; height: 100.0%;">Veld, South Africa</div>`)[0];
+                popup_f295bebf00578865333772e98e0121de.setContent(html_b30d6fa79640cb08f348d0224ed86a2d);
+            
+        
+
+        marker_0d09a00579d9dd0887ce26e94b5620c4.bindPopup(popup_f295bebf00578865333772e98e0121de)
+        .openPopup();
+
+        
+    
+    
+            marker_0d09a00579d9dd0887ce26e94b5620c4.bindTooltip(
+                `<div>
+                     Veld, South Africa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c4074044ddd4021332a4c5919f185d37 = L.marker(
+                [5.0, -72.0],
+                {}
+            ).addTo(map_992fc8abdbd0f1568ff5018a7889d9ee);
+        
+    
+        var popup_c957378a45f431fe834fb8fb89760505 = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            
+                var html_509b8196fdb124b7b921067da4130dae = $(`<div id="html_509b8196fdb124b7b921067da4130dae" style="width: 100.0%; height: 100.0%;">Guiana Highlands, South America</div>`)[0];
+                popup_c957378a45f431fe834fb8fb89760505.setContent(html_509b8196fdb124b7b921067da4130dae);
+            
+        
+
+        marker_c4074044ddd4021332a4c5919f185d37.bindPopup(popup_c957378a45f431fe834fb8fb89760505)
+        .openPopup();
+
+        
+    
+    
+            marker_c4074044ddd4021332a4c5919f185d37.bindTooltip(
+                `<div>
+                     Guiana Highlands, South America
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_36cac53de21022a326160fdcff10199d = L.marker(
+                [-32.0, 23.0],
+                {}
+            ).addTo(map_992fc8abdbd0f1568ff5018a7889d9ee);
+        
+    
+        var popup_4bfbf8b9a8b01169eeea4ba86fcca536 = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            
+                var html_9ae3946383690d9023154dc5cacbcc21 = $(`<div id="html_9ae3946383690d9023154dc5cacbcc21" style="width: 100.0%; height: 100.0%;">Karoo Plateau, South Africa</div>`)[0];
+                popup_4bfbf8b9a8b01169eeea4ba86fcca536.setContent(html_9ae3946383690d9023154dc5cacbcc21);
+            
+        
+
+        marker_36cac53de21022a326160fdcff10199d.bindPopup(popup_4bfbf8b9a8b01169eeea4ba86fcca536)
+        .openPopup();
+
+        
+    
+    
+            marker_36cac53de21022a326160fdcff10199d.bindTooltip(
+                `<div>
+                     Karoo Plateau, South Africa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
